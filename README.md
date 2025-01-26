@@ -67,14 +67,14 @@ Backend:
 
 - Flask
 - Flask-SocketIO
-
+  
 **Testing**
 
 - Open the application in multiple browser tabs or windows.
 - Send messages from one tab and observe them appearing in real time in all connected tabs.
 - Check the server terminal for debugging logs (e.g., "Message received").
 
-  **Command to Install Dependencies**
+**Command to Install Dependencies**
   
   pip install -r requirements.txt
 
