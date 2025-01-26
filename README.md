@@ -13,12 +13,19 @@ A real-time chat application built using Flask, Flask-SocketIO, HTML, CSS, and J
 
 **Project Structure**
 chat-app/
-|-- app.py                # Main backend application
+
+|-- app.py # Main backend application
+
 |-- templates/
+
 |   |-- index.html        # Frontend HTML
+
 |-- static/
+
 |   |-- styles.css        # Frontend styling
+
 |   |-- scripts.js        # Frontend JavaScript
+
 |-- requirements.txt      # List of dependencies
 
 **Install Dependencies**
