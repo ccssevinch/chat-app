@@ -58,10 +58,10 @@ Backend:
 
 **Communication Workflow:**
 
-1. A user enters a message and clicks "Send".
-2. The message is sent to the backend using WebSocket(send_message event).
-3. The backend processes the message and broacasts it to all connected clients (receive_message event).
-4. All clients display the new message in their chat interface.
+1. A user enters a username and message and clicks "Send".
+2. The username and message is sent to the backend using WebSocket(send_message event).
+3. The backend processes the username and message and broacasts it to all connected clients (receive_message event).
+4. All clients display the new username and message in their chat interface.
 
 **Dependencies**
 
@@ -76,7 +76,7 @@ Backend:
 
 **Command to Install Dependencies**
   
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
 
 **Acknowledgments** 
 
