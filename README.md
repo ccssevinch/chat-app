@@ -1,4 +1,4 @@
-**Chat Application**
+<h2>Chat Application</h2>
 
 A real-time chat application built using Flask, Flask-SocketIO, HTML, CSS, and JavaScript. This project allows multiple users to exchange messages in a shared char room, showcasing bidirectional communication with WebSocket.
 
