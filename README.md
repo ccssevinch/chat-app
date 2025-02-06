@@ -8,6 +8,16 @@ A real-time chat application built using Flask, Flask-SocketIO, HTML, CSS, and J
 - A single chat room where multiple users can join.
 - Simple and responsive frontend interface.
 
+**Upcoming Features**
+I am currently working on adding the following features to improve the application:
+
+1. User Authentication
+   - Sign-up and login functionality (email/password)
+   - Password recovery and reset options.
+  
+2. SQL Database
+   - Implementing a persistent SQL database to store user data and chat history.
+
 **Tools and Technologies**
 
 - Backend: Flask and Flask-SocketIO
@@ -73,8 +83,7 @@ Backend:
 - Flask-SocketIO documentation: https://flask-socketio.readthedocs.io/
 
 
-
-
+Stay tuned for more updates as I work on new features!
 
 
 
