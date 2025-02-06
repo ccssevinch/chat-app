@@ -13,12 +13,12 @@ A real-time chat application built using Flask, Flask-SocketIO, HTML, CSS, and J
 I am currently working on adding the following features to improve the application:
 
 <h3>1. User Authentication</h3>
-   * Sign-up and login functionality (email/password)
+ * Sign-up and login functionality (email/password)
    
-   * Password recovery and reset options.
+ * Password recovery and reset options.
   
 <h3>2. SQL Database</h3>
-   * Implementing a persistent SQL database to store user data and chat history.
+ * Implementing a persistent SQL database to store user data and chat history.
 
 <h2>Tools and Technologies</h2>
 
