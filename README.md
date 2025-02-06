@@ -18,7 +18,7 @@ I am currently working on adding the following features to improve the applicati
  * Password recovery and reset options.
   
 <h3>2. SQL Database</h3>
-- Implementing a persistent SQL database to store user data and chat history.
+ - Implementing a persistent SQL database to store user data and chat history.
 
 <h2>Tools and Technologies</h2>
 
