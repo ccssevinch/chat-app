@@ -1,6 +1,6 @@
 <h3>Breakdown of How the Trigger Works</h3>
 
-Ensures the Messgae is Being Sent to a Valid Group
+<h6>Ensures the Message is Being Sent to a Valid Group</h6>
 
 ```sql
 IF NEW.group_id IS NOT NULL AND NEW.receiver_id IS NULL THEN
@@ -11,7 +11,7 @@ This checks if the message is meant for a group.
 It ensures that the message is NOT also linked to a receiver_id (which would mean a private message).
 
 
-Prevents Messages from Being Sent to Deleted Groups
+<h6>Prevents Messages from Being Sent to Deleted Groups</h6>
 
 ```sql
 IF NOT EXISTS (SELECT 1 FROM Group_Chats WHERE id = NEW.group_id) THEN
@@ -31,7 +31,7 @@ This prevents orphaned messages (messages with a group_id that no longer exists)
 
 
 
-Automatically Inserts Read Status for Group Members
+<h6>Automatically Inserts Read Status for Group Members</h6>
 
 
 ```sql
@@ -48,7 +48,7 @@ Ensures group messages are delivered to all group members
 
 
 
-Ensures the Message is Being Sent as a Private Message (One-on-One)
+<h6>Ensures the Message is Being Sent as a Private Message (One-on-One)</h6>
 
 
 ```sql
@@ -61,7 +61,7 @@ Ensures that group_id IS NULL to avoid conflicts (message can't belong to both a
 
 
 
-Inserts Read Status for Private Messages
+<h6>Inserts Read Status for Private Messages</h6>
 
 
 ```sql
@@ -75,7 +75,7 @@ Automatically tracks message delivery for one-on-one chats.
 
 
 
-Precents Invalid Messages (If Neither a group_id Nor a receiver_id is Set)  
+<h6>Prevents Invalid Messages (If Neither a group_id Nor a receiver_id is Set)</h6>
 
 
 ```sql
