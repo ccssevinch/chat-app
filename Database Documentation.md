@@ -22,6 +22,7 @@ CREATE TABLE Users (
 
 <h3>Messages Table</h3>
 <h4>Stores both private and group messages</h4>
+
 ```sql
 CREATE TABLE Messages (
     id INT NOT NULL AUTO_INCREMENT, 
@@ -42,6 +43,7 @@ CREATE TABLE Messages (
 
 <h3>Groups or Group Chats Table</h3>
 <h4>Stores all group chats created by users</h4>
+
 ```sql
 CREATE TABLE Group_Chats (
     id INT NOT NULL AUTO_INCREMENT, 
@@ -57,6 +59,7 @@ CREATE TABLE Group_Chats (
 
 <h3>Group Members Table</h3>
 <h4>Tacks which users belong to which groups</h4>
+
 ```sql
 CREATE TABLE Group_Members (
     id INT NOT NULL AUTO_INCREMENT,
@@ -72,6 +75,7 @@ CREATE TABLE Group_Members (
 
 <h3>Message Status Table</h3>
 <h4>Tracks whether a message has been read</h4>
+
 ```sql
 CREATE TABLE Message_Status (
     id INT NOT NULL AUTO_INCREMENT, 
@@ -94,16 +98,19 @@ INSERT INTO Users (username, email, password_hash)
 VALUES ('john_doe', 'john@eexample.com', 'hashed_pasword');
 ```
 <h3>Insert a Private Message</h3>
+
 ```sql  
 INSERT INTO Messages (receiver_id, sender_id, message_text, is_private)
 VALUES (38, 47, 'Hello, this is a private message.', TRUE);
 ```
 <h3>Insert a Group Message</h3>
+
 ```sql 
 INSERT INTO Messages (group_id, sender_id, message_text, is_private)
 VALUES (5, 47, 'Hello, group!', FALSE);
 ```
 <h3>Find All Messages Sent to a Group</h3>
+
 ```sql  
 SELECT id AS message_id, sender_id, message_text, sent_at
 FROM messages
@@ -111,12 +118,14 @@ WHERE group_id = 6
 ORDER BY sent_at DESC;
 ```
 <h3>Find Members of a Group</h3>
+
 ```sql
 SELECT user_id 
 FROM group_members
 WHERE group_id = 6; 
 ```
 <h3>Check Who Has Read a Message</h3>
+
 ```sql
 SELECT ms.message_id, u.username, ms.is_read, ms.read_at
 FROM message_status ms
@@ -130,6 +139,7 @@ WHERE ms.message_id = 6;
 
 <h4>1. It inserts a corresponding read status (Message_Status) for every new message.</h4>
 <h4>It determines whether the message should go into a group chat or a private chat before allowing inserting</h4>
+
 ```sql
 CREATE TRIGGER after_insert_message_status
 AFTER INSERT ON Messages
@@ -153,8 +163,9 @@ BEGIN
         SET MESSAGE_TEXT = 'Message must have either a group_id or a receiver_id.';
     END IF;
 END;
-
 ```
+
+
 **For a detailed breakdown of how this trigger works, see [TRIGGER_BREAKDOWN.md](TRIGGER_BREAKDOWN).**
 
 
