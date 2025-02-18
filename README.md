@@ -12,7 +12,7 @@ A real-time chat application built using Flask, Flask-SocketIO, HTML, CSS, and J
 
 I am currently working on adding the following features to improve the application:
 
-<h3>1. Secure Authentication</h3>
+<h3>Secure Authentication</h3>
 
  - User registration, login, JWT-based authentication.
 
