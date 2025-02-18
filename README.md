@@ -12,15 +12,37 @@ A real-time chat application built using Flask, Flask-SocketIO, HTML, CSS, and J
 
 I am currently working on adding the following features to improve the application:
 
-<h3>1. User Authentication</h3>
+<h3>1. Secure Authentication</h3>
 
- - Sign-up and login functionality (email/password)
-   
- * Password recovery and reset options.
-  
-<h3>2. SQL Database</h3>
+ - User registration, login, JWT-based authentication.
 
- - Implementing a persistent SQL database to store user data and chat history.
+<h3>Real-Time Messaging</h3>
+
+- Instant one-on-one and group chats with WebSockets.
+
+<h3>Chat History and Storage</h3>
+
+- Messages saved in MySQL for easy retrieval
+
+<h3>Message Status Updates</h3>
+
+- Delivered and read receipts for messages
+
+<h3>Group Chat Support</h3>
+
+- Create, join, and leave groups with message history
+
+<h3>Optimized Performance</h3>
+
+- Flask-SocketIO, MySQL indexing, and caching
+
+<h3>Security Enhancements</h3>
+
+- Password Hashing, JWT protection, and CORS settings
+
+<h3>Deployment Ready</h3>
+
+- Configure for AWS Lambda (Serverless Deployment)
 
 <h2>Tools and Technologies</h2>
 
