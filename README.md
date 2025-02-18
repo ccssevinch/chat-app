@@ -12,6 +12,8 @@ A real-time chat application built using Flask, Flask-SocketIO, HTML, CSS, and J
 
 I am currently working on adding the following features to improve the application:
 
+<h3>Backend</h3>
+
 <h3>Secure Authentication</h3>
 
  - User registration, login, JWT-based authentication.
@@ -43,6 +45,28 @@ I am currently working on adding the following features to improve the applicati
 <h3>Deployment Ready</h3>
 
 - Configure for AWS Lambda (Serverless Deployment)
+
+<h3>Frontend</h3>
+
+<h3>Intuitive Chat</h3>
+
+- Clean, responsive design with message bubbles
+
+<h3>Notifications and Mentions</h3>
+
+- Notifications for new messages and tagged mentions
+
+<h3>Typing Indicator</h3>
+
+- Show when a user is typing a message
+
+<h3>Pinned Messages</h3>
+
+- Keep important messages at the top
+
+<h3>Dark Mode</h3>
+
+- Toggle between light and dark themes
 
 <h2>Tools and Technologies</h2>
 
