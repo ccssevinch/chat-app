@@ -135,7 +135,7 @@ WHERE ms.message_id = 6;
 <h2>3. Triggers & Business Logic</h2>
 <h3>Trigger: Automatically Insert Message Status</h3>
 
-<h4>after_insert_message_status ensures two main things</h4>
+<h4>after_insert_message_status trigger ensures two main things</h4>
 
 <h4>1. It inserts a corresponding read status (Message_Status) for every new message.</h4>
 <h4>It determines whether the message should go into a group chat or a private chat before allowing inserting</h4>
