@@ -166,7 +166,8 @@ END;
 ```
 
 
-**For a detailed breakdown of how this trigger works, see [TRIGGER_BREAKDOWN.md](TRIGGER_BREAKDOWN).**
+**For a detailed breakdown of how this trigger works, see [TRIGGER_BREAKDOWN.md](TRIGGER_BREAKDOWN.md).**
+
 
 
 
