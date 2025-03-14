@@ -7,8 +7,8 @@ Detailed Explanation:
 - The message is sent via WebSocket and stored in the database
 - If the recipient is online, the message is delivered instantly
 - If the recipient is offline, the message is stored and sent upon reconnection
+ 
 
-Diagram 
 ![Websocket Activity Diagram](activity_diagram.png)
 
 </h4>
