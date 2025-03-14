@@ -1,6 +1,6 @@
-<h2>Activity Diagram</h2>
+<h1>Activity Diagram</h1>
 
-<h5> Activity diagram visually represents real-time message handling process in a chat system</h5>
+<h4> Activity diagram visually represents real-time message handling process in a chat system</h4>
 
 Why It Fits as an Activity Diagram?
 
