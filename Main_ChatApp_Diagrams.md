@@ -1,6 +1,14 @@
 <h1>Activity Diagram</h1>
 
-<h4> Activity diagram visually represents real-time message handling process in a chat system</h4>
+<h4> The WebSocket Activity Diagram 
 
-Why It Fits as an Activity Diagram?
+Detailed Explanation:
+- When a user logs in, a WebSocket connection is established
+- The message is sent via WebSocket and stored in the database
+- If the recipient is online, the message is delivered instantly
+- If the recipient is offline, the message is stored and sent upon reconnection
 
+Diagram 
+![Websocket Activity Diagram](activity_diagram.png)
+
+</h4>
