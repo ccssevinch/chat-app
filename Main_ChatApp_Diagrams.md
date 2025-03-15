@@ -1,6 +1,7 @@
 <h1>Activity Diagram</h1>
 
-<h4> The WebSocket Activity Diagram 
+The WebSocket Activity Diagram 
+
 
 Detailed Explanation:
 - When a user logs in, a WebSocket connection is established
@@ -9,6 +10,6 @@ Detailed Explanation:
 - If the recipient is offline, the message is stored and sent upon reconnection
  
 
-![Websocket Activity Diagram](activity_diagram.png)
+![Websocket Activity Diagram](Diagrams/activity_diagram.png)
 
-</h4>
+
