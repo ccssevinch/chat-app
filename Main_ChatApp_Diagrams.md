@@ -13,3 +13,13 @@ Detailed Explanation:
 ![Websocket Activity Diagram](Diagrams/activity_diagram.png)
 
 
+<h1>Sequence Diagram</h1>
+
+The REST API Sequence Diagram illustrates how a user interacts with the Flask Chat Application, showing the step-by-step communication flow between:
+1. User (Client)
+2. Flask REST API
+3. Database (MySQL or other storage)
+
+![REST API Sequence Diagram](Diagrams/sequence_diagram.png)
+
+This diagram tracks key API calls, including user authentication, message retrieval, message sending, and contact list fetching. It helps developers understand how data moves between the client, backend, and database.
