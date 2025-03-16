@@ -8,8 +8,8 @@ Detailed Explanation:
 - The message is sent via WebSocket and stored in the database
 - If the recipient is online, the message is delivered instantly
 - If the recipient is offline, the message is stored and sent upon reconnection
- 
 
+ 
 ![Websocket Activity Diagram](Diagrams/activity_diagram.png)
 
 
@@ -22,4 +22,6 @@ The REST API Sequence Diagram illustrates how a user interacts with the Flask Ch
 
 ![REST API Sequence Diagram](Diagrams/sequence_diagram.png)
 
+
+Detailed Explanation: 
 This diagram tracks key API calls, including user authentication, message retrieval, message sending, and contact list fetching. It helps developers understand how data moves between the client, backend, and database.
