@@ -19,6 +19,20 @@ CREATE TABLE Users (
     UNIQUE KEY email (email)
 )
  ```
+<h3> Contacts Table</h3>
+```sql
+id INT NOT NULL AUTO_INCREMENT, 
+user_id INT NOT NULL, 
+contact_id INT NOT NULL, 
+added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+is_blocked BOOLEAN DEFAULT FALSE,
+PRIMARY KEY (id),
+UNIQUE KEY (user_id, contact_id)
+FOREIGN KEY (user_id) REFERENCES Users(id) ON DELETE CASCADE,
+FOREIGN KEY (contact_id) REFERENCES Users(id) ON DELETE CASCADE
+);
+```
+
 
 <h3>Messages Table</h3>
 <h4>Stores both private and group messages</h4>
