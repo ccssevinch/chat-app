@@ -33,3 +33,13 @@ This diagram tracks key API calls, including user authentication, message retrie
 This class diagram models the core components of the chat application, defining their attributes, methods, and relationships.
 
 Detailed Explanation: 
+
+The system supports:
+
+User registration and authentication 
+One-to-One messaging and group chats
+Timed private chats (self-deleting after expiration)
+Contact management (adding, blocking, fetching contacts)
+Group membership management (roles, notifications, activity tracking)
+
+![Class Diagram](Diagrams/class_diagram.png)
