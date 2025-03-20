@@ -19,6 +19,7 @@ CREATE TABLE Users (
     UNIQUE KEY email (email)
 )
  ```
+
 <h3> Contacts Table</h3>
 ```sql
 id INT NOT NULL AUTO_INCREMENT, 
