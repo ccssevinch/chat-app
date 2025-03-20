@@ -26,3 +26,10 @@ The REST API Sequence Diagram illustrates how a user interacts with the Flask Ch
 Detailed Explanation: 
 
 This diagram tracks key API calls, including user authentication, message retrieval, message sending, and contact list fetching. It helps developers understand how data moves between the client, backend, and database.
+
+
+<h1>Class Diagram</h1>
+
+This class diagram models the core components of the chat application, defining their attributes, methods, and relationships.
+
+Detailed Explanation: 
