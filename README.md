@@ -44,7 +44,7 @@ I am currently working on adding the following features to improve the applicati
 
 <h3>Deployment Ready</h3>
 
-- Configure for AWS Lambda (Serverless Deployment)
+- AWS Lambda Configuration (Serverless Deployment)
 
 <h3>Frontend</h3>
 
